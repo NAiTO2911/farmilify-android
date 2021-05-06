@@ -15,9 +15,9 @@ class Landing : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
 
-        val button = findViewById<Button>(R.id.button)
+        val button = findViewById<Button>(R.id.login)
         button.setOnClickListener {
-            val intent = Intent(this, Dashboard::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }
