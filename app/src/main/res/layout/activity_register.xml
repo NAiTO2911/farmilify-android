@@ -51,17 +51,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textpassword" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textpassulang" />
-
     <TextView
         android:id="@+id/textdaftarakun"
         android:layout_width="171dp"
@@ -120,17 +109,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <TextView
-        android:id="@+id/textpassulang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Ulangi Password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
-
-    <TextView
         android:id="@+id/textemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -145,11 +123,10 @@
         android:id="@+id/check_SK"
         android:layout_width="372dp"
         android:layout_height="42dp"
-        android:layout_marginTop="12dp"
         android:text="Saya setuju bahwa saya akan mengikuti syarat dan ketentuan yang berlaku pada Platform ini."
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
-        tools:layout_editor_absoluteY="536dp" />
+        tools:layout_editor_absoluteY="488dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
