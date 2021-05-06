@@ -17,7 +17,7 @@ class Landing : AppCompatActivity() {
 
         val buttonDaftar = findViewById<Button>(R.id.keRegister)
         buttonDaftar.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent) }
     }
 

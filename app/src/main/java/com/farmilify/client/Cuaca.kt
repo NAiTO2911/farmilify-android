@@ -6,13 +6,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_dashboard.*
+import kotlinx.android.synthetic.main.activity_cuaca.*
 import okhttp3.*
 import java.io.IOException
 
-class DashboardActivity : AppCompatActivity() {
-
-
+class Cuaca : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -36,7 +34,7 @@ class DashboardActivity : AppCompatActivity() {
                 var itemAdp = ItemAdapter(list as List<ListItem>)
 
                 recycler_view_container.apply {
-                    layoutManager = LinearLayoutManager(this@DashboardActivity)
+                    layoutManager = LinearLayoutManager(this@Cuaca)
                     adapter = itemAdp
                 }
             }
@@ -58,7 +56,7 @@ class DashboardActivity : AppCompatActivity() {
 
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {}
-            override fun onResponse(call: Call, response: okhttp3.Response) = println(response.body()?.string())
+            override fun onResponse(call: Call, response: okhttp3.Response) = println(response.body?.string())
         })
     }
 }
