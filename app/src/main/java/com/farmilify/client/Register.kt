@@ -1,8 +1,8 @@
 package com.farmilify.client
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class Register : AppCompatActivity() {
@@ -12,5 +12,10 @@ class Register : AppCompatActivity() {
         setContentView(R.layout.activity_register)
         setSupportActionBar(findViewById(R.id.toolbar))
 
+        val button = findViewById<Button>(R.id.keDashboard)
+        button.setOnClickListener {
+            val intent = Intent(this, Dashboard::class.java)
+            startActivity(intent) }
     }
+
 }
