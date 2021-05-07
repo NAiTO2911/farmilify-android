@@ -29,12 +29,12 @@ class RegisterActivity : AppCompatActivity(), RegisterView {
 
         val presenter = RegisterPresenter(this)
         btnRegister.onClick {
+            val username  = edtUsername.text.toString()
             val nama  = edtName.text.toString()
             val email  = edtEmail.text.toString()
-            val username  = edtUsername.text.toString()
             val password  = edtPassword.text.toString()
 
-            presenter.register(nama, email, username, password)
+            presenter.register(username, nama, email, password)
 
         }
     }

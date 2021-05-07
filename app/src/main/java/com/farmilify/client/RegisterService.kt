@@ -10,9 +10,9 @@ interface RegisterService {
     @FormUrlEncoded
     @POST("registerUser")
     fun register(
+        @Field("username") username : String,
         @Field("nama") nama : String,
         @Field("email") email : String,
-        @Field("hp") hp : String,
         @Field("password") password : String
     ) : Call<ResultRegister>
 }
