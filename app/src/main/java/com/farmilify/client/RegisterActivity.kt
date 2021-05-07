@@ -8,16 +8,16 @@ import org.jetbrains.anko.sdk27.coroutines.onClick
 
 
 class RegisterActivity : AppCompatActivity(), RegisterView {
-    override fun onSuccessRegister(msg: String?) {
+     override fun onSuccessRegister(msg: String?) {
         alert {
-            title = "Pesan"
+            title = "Selamat, Akun anda berhasil dibuat !"
             message = msg ?: ""
         }.show()
     }
 
     override fun onErrorRegister(msg: String?) {
         alert {
-            title = "Gagal"
+            title = "Akun gagal dibuat !"
             message = msg ?:""
         }.show()
     }

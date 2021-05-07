@@ -29,7 +29,7 @@
 
         <activity
             android:name=".RegisterActivity"
-            android:label="Register"></activity>
+            android:label="Farmilify Register"></activity>
 
         <activity
             android:name=".Dashboard"
