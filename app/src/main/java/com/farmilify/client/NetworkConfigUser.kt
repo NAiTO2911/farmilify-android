@@ -19,11 +19,12 @@ object NetworkConfigUser {
 
         private fun getRetrofit(): Retrofit {
             return Retrofit.Builder()
-                .baseUrl("http://192.168.0.104/server_farmilify/index.php/Api/")
+                .baseUrl("http://felz.mywebcommunity.org/index.php/Api/")
                 .client(getInterceptor())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
 
         fun service(): RegisterService? = getRetrofit().create(RegisterService::class.java)
+        fun service2(): LoginService? = getRetrofit().create(LoginService::class.java)
     }
